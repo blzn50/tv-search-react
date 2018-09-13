@@ -9,7 +9,10 @@ class SeriesDetail extends Component {
     const { id } = this.props.match.params;
     fetch(`http://api.tvmaze.com/shows/${id}?embed=episodes`)
       .then(res => res.json())
-      .then(json => this.setState({ show: json }));
+      .then(json => {
+        console.log(json);
+        this.setState({ show: json });
+      });
   }
   render() {
     const { show } = this.state;
@@ -21,7 +24,7 @@ class SeriesDetail extends Component {
             <p>Series Detail - show id: {this.props.match.params.id}</p>
             <p>{show.name}</p>
             <p>Premiered: {show.premiered}</p>
-            <p>Rating: {show.average}</p>
+            <p>Rating: {show.rating.average}</p>
             <p>Episodes: {show._embedded.episodes.length}</p>
             <p>
               <img src={show.image.medium} alt="show poster" />
