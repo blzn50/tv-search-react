@@ -17,7 +17,7 @@ class Series extends Component {
       seriesName: inp,
       isFetching: true
     });
-    fetch(`http://api.tvmaze.com/search/shows?q=${inp}`)
+    fetch(`https://api.tvmaze.com/search/shows?q=${inp}`)
       .then(res => res.json())
       .then(json => this.setState({ series: json, isFetching: false }));
   };
