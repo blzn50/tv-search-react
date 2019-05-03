@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">
-            <a href="/">TV series search</a>
+            <a href="/tv-search-react">TV series search</a>
           </h1>
         </header>
         <div style={{ paddingTop: 20 }}>
