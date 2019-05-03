@@ -12,3 +12,12 @@
 .App-title {
   font-size: 1.5em;
 }
+
+h1 > a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 > a:hover {
+  color: rgba(245, 245, 245, 0.5);
+}

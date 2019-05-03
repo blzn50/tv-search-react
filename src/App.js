@@ -7,7 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">TV series search</h1>
+          <h1 className="App-title">
+            <a href="/">TV series search</a>
+          </h1>
         </header>
         <div style={{ paddingTop: 20 }}>
           <Header />
